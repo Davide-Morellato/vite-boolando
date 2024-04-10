@@ -1,0 +1,16 @@
+/* STRUCTURE */
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column{
+    width: calc(4 * 100% / 12);
+    padding: 10px;
+}

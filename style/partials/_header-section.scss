@@ -1,0 +1,37 @@
+/* HEADER */
+
+.main-header{
+    background-color: #FF6A00;
+    padding: 24px 0;
+}
+
+.f-col, .s-col, .t-col{
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    gap: 10px;
+}
+
+.s-col{
+    flex-grow: 1; 
+}
+
+.logo{
+    vertical-align: middle;
+}
+
+.logo-title{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.border{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 100px;
+    background-color: rgb(0, 0, 0);
+}

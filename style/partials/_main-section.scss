@@ -1,0 +1,88 @@
+/* MAIN */
+
+.card-content{
+    position: relative;
+}
+
+.card-img{
+    display: block;
+}
+
+.discount, .sustain, .b-heart, .r-heart{
+    padding: 2px 3px;
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b-heart, .r-heart{
+    background-color: white;
+    top: 10px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+}
+
+.discount{
+    background-color: red;
+    color: white;
+    left: 0;
+    bottom: 30px;
+    z-index: 1;
+}
+
+.sustain{
+    background-color: rgb(47, 157, 47);
+    color: white;
+    bottom: 30px;
+    left: 40px;
+    z-index: 1;
+}
+
+.card-hover{
+    position: relative;
+}
+
+.r-heart{
+    color: red;
+}
+
+.price{
+    color: red;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.price-cout{
+    text-decoration: line-through;
+    color: black;
+    font-weight: 400;
+    font-size: small;
+}
+
+.new{
+    left: 0;
+}
+
+
+/* HOVER */
+
+.card-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.card-content:hover .card-hover{
+    opacity: 1;
+}
