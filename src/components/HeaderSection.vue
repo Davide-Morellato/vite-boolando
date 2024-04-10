@@ -1,18 +1,38 @@
+<script>
+  export default {
+    data(){
+      return {
+        links:{
+          women: 'Donna',
+          men: 'Uomo',
+          kids: 'Bambino'
+        },
+
+        chooses:{
+          profile: 'Prof',
+          favourites: 'Fav',
+          cart: 'Cart'
+        }
+      }
+    }
+  }
+</script>
+
 <template>
   <header class="main-header">
     <div class="container">
       <div class="row">
         <div class="f-col">
           <ul class="links">
-            <li>
-              <a href="#">Donna</a>
+            <li v-for="(link, i) in links">
+              <a href="#">{{link}}</a>
             </li>
-            <li>
+            <!-- <li>
               <a href="#">Uomo</a>
             </li>
             <li>
               <a href="#">Bambini</a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="s-col">
@@ -23,15 +43,15 @@
         </div>
         <div class="t-col">
           <ul class="links">
-            <li>
-              <a class="border" href="#">Prof</a>
+            <li v-for="(choose, i) in chooses">
+              <a class="border" href="#">{{choose}}</a>
             </li>
-            <li>
+            <!-- <li>
               <a class="border" href="#">Fav</a>
             </li>
             <li>
               <a class="border" href="#">Cart</a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
