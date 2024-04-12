@@ -124,7 +124,9 @@ export default {
       <div class="container">
         <div class="row">
           <!-- First Card -->
-          <CardsComponent v-for="(product, i) in products" :key="product.id" :item="product" />
+          <li class="column" v-for="(product, i) in products" :key="product.id" >
+            <CardsComponent :item="product" />
+          </li>
 
           <!-- Second Card -->
           <!-- <div class="column">
