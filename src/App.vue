@@ -8,8 +8,9 @@
       HeaderSection,
       MainSection,
       FooterSection
-    }
+    },
   }
+
 </script>
 
 

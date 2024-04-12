@@ -1,4 +1,6 @@
 <script>
+
+
 export default {
   //identifico la props per richiamare l'array nel MainSection
   props: {
