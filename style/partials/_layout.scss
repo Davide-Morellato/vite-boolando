@@ -14,3 +14,12 @@
     width: calc(4 * 100% / 12);
     padding: 10px;
 }
+
+header .row,
+footer .row{
+    padding: 0 15px;
+}
+
+main .row{
+    margin: 25px 0;
+}
